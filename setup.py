@@ -6,18 +6,18 @@ long_description = long_description.split('split here', 1)[1]
 f.close()
 
 setup(
-    name='tw2.jquery_fg',
-    version='2.0a4',
-    description='toscawidgets2 wrapper for random filament group tools',
+    name='tw2.huBarcode',
+    version='2.0a5',
+    description='toscawidgets2 wrapper for huBarcode',
     long_description=long_description,
-    author='Ralph Bean',
-    author_email='ralph.bean@gmail.com',
-    license='MIT',
-    url='http://github.com/ralphbean/tw2.jquery_fg',
+    author='RemyD',
+    author_email='remyd@civx.us',
+    license='AGPLv3+',
+    url='',
     install_requires=[
         "tw2.core>=2.0b2",
-        "tw2.jquery_core",
-        "tw2.jquery_ui",
+        "huBarcode",
+        "PIL",
         ## Add other requirements here
         # "Genshi",
         ],
@@ -29,7 +29,7 @@ setup(
     entry_points="""
         [tw2.widgets]
         # Register your widgets so they can be listed in the WidgetBrowser
-        widgets = tw2.jquery_fg
+        widgets = tw2.huBarcode
     """,
     keywords = [
         'toscawidgets.widgets',
